@@ -7,6 +7,7 @@ int main(void) {
     std::string name;
     std::cout << "Please enter your name: ";
     std::getline(std::cin, name);
+    std::cout << std::endl;
 
     const std::string greeting = GreetingUtils::create_message(name);
 
@@ -16,4 +17,3 @@ int main(void) {
 
     delete[] c_greeting;
 }
-
